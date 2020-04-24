@@ -1,0 +1,56 @@
+ *{
+     margin: 0;
+     padding:0;
+ }
+
+ section{
+     height:75vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-family: "raleway", sans-serif;
+     font-size: 32px;
+     text-transform: uppercase;
+     letter-spacing: 8px;
+ }
+
+ .section1 {
+     background: rosybrown;
+ }
+
+ .section2 {
+    background: royalblue;
+}
+
+.section3 {
+    background: red;
+}
+
+.section4 {
+    background: green;
+}
+
+.to-top {
+    background: silver;
+    position: fixed;
+    bottom: 16px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: tomato;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+
+.to-top.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1 ;
+}
