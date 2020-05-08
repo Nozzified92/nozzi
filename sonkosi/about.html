@@ -1,145 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width-device-width,initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>MY PORTIFOLIO</title>
-        <!--google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700i|yesteryear" rel="stylesheet">
-
-
-        <link rel="stylesheet" href="style.css" />
-        <style>
-            h1{
-                color: blue;
-            }
-            h2{
-                font-size: 3rem;
-            }
-        </style>
-
+<head>
+    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <title>Transparent Search Box</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="stylesheet" href="style.css">
     </head>
-    <!--
-        SAVE TIME
-        ALT===OPTION
-        COMMAND===CTRL WINDOWS
-        COMMAND+ Z ===UNDO +C +V
-        HOLD OPTION + CLICK === MULTIPLE CURSORS
-        COMMAND + I === SELECT WHOLE LINE
-        OPTION + LEFT/RIGHT KEYS ===NAVIGATE
-        COMMAND +UP/DOWN = START/END DOCUMENT
-        SHIFT + OPTION+DOWN = COPY LINE
-        ALT +UP/DOWN =MOVE LINE UP/DOWN
-        COMMAND +/ = TOGGLE LINE COMMENT
-        COMMAND + K + COMMAND + S = SHORTCUTS
-        COMMAND + ENTER = START A NEW LINE
-    -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background: wheat;
+            color: black;
+            line-height: 1.9;
+            height: 100vh;
+            /*overflow: hidden;*/
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            /*CSS Smooth Scroll*/
+            /*overflow-y: scroll;*/
+            /*scroll-behavior: smooth;*/
+            /*scroll-snap-type: y mandatory;*/
+        }
+        .navbar{
+            position: fixed;
+            top: 0;
+            z-index: 1;
+            display: flex;
+            width: 100%;
+            height: 60px;
+            background: green;
+        }
+        .navbar ul {
+            display: flex;
+            list-style: none;
+            width: 100%;
+            justify-content: center;
+        }
+        .navbar ul li{
+            margin: 0 1rem;
+            padding: 1rem;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #f4f4f4;
+        }
+        .navbar ul li a:hover{
+            color:skyblue
+        }
+        section{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100vh;
+            scroll-snap-align: center;
+        }
+        section h1{
+            font-size: 4rem;
+        }
+        section p{
+            font-size: 1.5rem;
+        }
+        /*Section Image*/
+        section#home{
+            background: url('https://source.unsplash.com/bZZp1PnHI0E/1600x900') no-repeat center center/cover;
+        }
+        section#about{
+            background: url('https://source.unsplash.com/VRxo0yY-gyM/1600x900') no-repeat center center/cover;
+        }
+        section#experience{
+            background: url('https://source.unsplash.com/k2tdxnFDHc/1600x900') no-repeat center center/cover;
+        }
+        section#contact{
+            background: url('https://source.unsplash.com/2aAHlfDOhJM/1600x900') no-repeat center center/cover;
+        }
+    </style>
     <body>
-        <!--external css--> 
-                <style>
-            *
-            {
-                padding: 0px;
-                margin: 0px;
-            }
-            body
-            {
-                background-image: none;
-                margin: 250px;
-                margin-top: 20px;
-            }
-            #container ul {
-                list-style: none;
-            }
-            #container ul li{
-                background-color:transparent;
-                width: 100px;
-                border: 1px solid black;
-                border-radius: 200px;
-                height: 30px;
-                line-height: 30px;
-                text-align: center;
-                float: right;
-                color:black;
-                position: relative;
-            }
-            #container ul li:hover{
-                background-color: white;
-            }
-            #container ul ul{
-                display: none;
-            }
-            #container ul li:hover> ul{
-                display:block;
-            }
-            #container ul ul ul{
-                margin-right: 150px;
-                top:0px;
-                position:absolute;
-            }
-        </style>
-        <title>MY WEBSITE</title>
-    </head>
-    <body>
-                <div id="container">
-                    <ul>
-                        <li><a href="contacts.html">Contacts</a></li>
-                        <li><a href="experience.html">Experience</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="index.html">Home</a></li>
-                    </ul>
-                    <section>
-                 </style>
-                <div class="container">
-                        <div class="header">
-                            <img src="logo" alt="">
-                        </div>
-                        <div id="nav">
-                            <div class="sidebar">
-                            </div>
-        
-                            <div class="main">
-                                <div id="box">
-                                    <p class="test">
-                                        <a target="_blank" href="rome.html">
-                                            <img src="2016.jpg" alt=""></a>
-                                    </p>
-                                    <p>
-                                        </p>
-                                        </div>
-                                        </div>
-                                    </section>
-                                    <section>
-                                        <br>
-                                        <br>
-                                        <br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <img src="graduate.jpg" width="20%" alt="graduate" /> &nbsp;&nbsp;&nbsp;
-                <img src="IT.jpg" width="20%" alt="IT" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <img src="interested.jpg" width="20%" alt="interested" /><br>
-                <br>
-                <br>
-            <a href="#top">back to the top</a>
-    </body> 
-</section>
-</html>
+        <div class="container">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="home.html">home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="experience.html">experience</a></li>
+                    <li><a href="gallery.html">gallery</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </nav>
+        </section>
+            <section id="about">
+                <h1>about</h1>
+                <img src="2016.jpg">
+                <p>
+                   <h3>Iam Nozitshaba Candy Sonkosi from Tsomo Eastern Cape<br> Iam Intern at Younglings Africa.
+                    Iam a Website Developer, <br>im very powerful in html and css?family</h3>
+                </p>
+            </section>
+            <section align="center">
+                <h1>EDUCATION</h1>
+                <img src="books.jpg">
+                <p>
+
+                </p>
+            </section>
+            
