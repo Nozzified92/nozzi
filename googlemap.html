@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>GEO LOCATION</title>
+        <style>
+            body{
+                margin: 0px;
+                background-image: none;
+                background-repeat: no-repeat;
+            }
+            .holder {
+                width: 600px;
+                height: 400px;
+                margin: 11px auto;
+                background-color: #ffff;
+                border: 1px solid #1e1a1a;
+            }
+            .element {
+                margin: 11px;
+                width: 500px;
+                height: auto;
+            }
+            .button {
+                width: 200px;
+                height: 50px;
+                border: 0px solid;
+                background-color: wheat;
+                color: #fff;
+                font-size: 24px;
+            }
+            .button:hover {
+                   background-color: tomato;
+                   color: #fff;
+            }
+            </style>
+    </head>
+    <body>
+        <div class="Holder">
+            <div class="element">
+                <input name="get_loation" type="submit" class="button" id="get_loation" value="get my location">
+                <div class="Element">
+                    <div id="map">
+                        <iframe id="googlemap" width="425" height="350" frameborder="0" scroling="no" marginheight="0" 
+                        marginwidth="0" src="https://maps.google.co.uk?output=embed"></iframe>
+                    </div>
+             </div>
+             </div>
+
+
+             <script>
+
+                 var c= function(pos) {
+                     var lat = pos.coords.latitude,
+                     long = pos.coords.longitude,
+                     coords = lat +','+ long;
+
+                     document.getElementById('google_map').setAttribute('src','https://maps.google.co.uk?q='+coords+'&z=60&output=embed');
+
+                 }
+              
+
+
+              document.getElementById('get_location').onclick= function(){
+                  navigator.geolocation.getCurrentLocation(c);
+                  return false;
+              }
+
+
+
+
+
+             </script>
+
+        </div>
+    </body>
+</html>
