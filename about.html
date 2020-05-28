@@ -7,194 +7,84 @@
         <link href="stylesheet" href="flexbox.css">
     </head>
     <body>
-        <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>MY WEBSITE</title>
-        <link href="stylesheet" href="css/style.css">
-        <link href="stylesheet" href="flexbox.css">
-    </head>
-    <body>
+        <style>
+            body{
+                margin: 0px;
+                background-image: none;
+                background-repeat: no-repeat;
+            }
+            .holder {
+                width: 600px;
+                height: 400px;
+                margin: 11px auto;
+                background-color: #ffff;
+                border: 1px solid #1e1a1a;
+            }
+            .element {
+                margin: 11px;
+                width: 500px;
+                height: auto;
+            }
+            .button {
+                width: 200px;
+                height: 50px;
+                border: 0px solid;
+                background-color: wheat;
+                color: #fff;
+                font-size: 24px;
+            }
+            .button:hover {
+                   background-color: tomato;
+                   color: #fff;
+            }
+            </style>
+        </head>
         <body>
-            <style>
-                @import url('https://fonts.googleapis.com/css?family=Comfortaa');
-    *{
-        margin: 0;
-        padding: 0;
-        outline: none;
-        box-sizing: border-box;
-        font-family: 'comfortaa', cursive;
-        font-family: 'Roboto', sans-serif;
-    }
-    body{
-        background: none;
-        background-size: cover;
-        width: 100%;
-        height: 100vh;
-    }
-    .wrapper{
-        position:absolute;
-        top:50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        max-width: 550px;
-        width: 100%;
-        padding: 15px;
-        border-radius: 5px;
-        display: flex;
-        justify-content: space-between;
-        }
-        .wrapper .input{
-            width: 85%;
-            padding: 15px 20px;
-            border: none;
-            border-radius: 5px;
-            font-weight: bolder;
-        }
-    .searchbtn{
-        background:royalblue;
-        width: 10%;
-        border-radius: 5px;
-        position: relative;
-        cursor: pointer;
-    }
-    .searchbtn .fas{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        font-size: 18px;
-    }
-            </style>
-            <style>
-                *{
-                    margin: 0;
-                    padding: 0;
-                }
-                body{
-                    font-family: Arial, Helvetica, sans-serif;
-                    background-image: url('../interested.jpg');
-                    color: wheat;
-                    line-height: 1.9;
-                    height: 100vh;
-                    /*overflow: hidden;*/
-                }
-                .container{
-                    width: 100%;
-                    height: 100%;
-                    /*CSS Smooth Scroll*/
-                    /*overflow-y: scroll;*/
-                    /*scroll-behavior: smooth;*/
-                    /*scroll-snap-type: y mandatory;*/
-                }
-                .navbar{
-                    position: fixed;
-                    top: 0;
-                    z-index: 1;
-                    display: flex;
-                    width: 100%;
-                    height: 60px;
-                    background: rosybrown;
-                }
-                .navbar ul {
-                    display: flex;
-                    list-style: none;
-                    width: 100%;
-                    justify-content: center;
-                }
-                .navbar ul li{
-                    margin: 0 1rem;
-                    padding: 1rem;
-                }
-                .navbar ul li a{
-                    text-decoration: none;
-                    text-transform: uppercase;
-                    color: #f4f4f4;
-                }
-                .navbar ul li a:hover{
-                    color:skyblue
-                }
-                section{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    width: 100%;
-                    height: 100vh;
-                    scroll-snap-align: center;
-                }
-                section h1{
-                    font-size: 4rem;
-                }
-                section p{
-                    font-size: 1.5rem;
-                }
-                /*Section Image*/
-                section#home{
-                    background: url('https://source.unsplash.com/bZZp1PnHI0E/1600x900') no-repeat center center/cover;
-                }
-                section#about{
-                    background: url('https://source.unsplash.com/VRxo0yY-gyM/1600x900') no-repeat center center/cover;
-                }
-                section#experience{
-                    background: url('https://source.unsplash.com/k2tdxnFDHc/1600x900') no-repeat center center/cover;
-                }
-                section#contact{
-                    background: url('https://source.unsplash.com/2aAHlfDOhJM/1600x900') no-repeat center center/cover;
-                }
-            </style>
-            <body>
-                <div class="container">
-                    <nav class="navbar">
-                        <ul>
-                            <li><a href="home.html">home</a></li>
-                            <li><a href="about.html">about</a></li>
-                            <li><a href="experience.html">experience</a></li>
-                            <li><a href="gallery.html">gallery</a></li>
-                            <li><a href="googlemap.html">googlemap</a></li>
-                            <li><a href="contact.html">contact</a></li>
-                        </ul>
-                    </nav>
-        </div>
-    </div>
-    </body>
-</header>
-<!--SHOWCASE-->
-<section id="showcase">
-    <div class="container">
-        <div class="row center-xs center-sm center-md- center-lg middle-xs middle-sm middle-md middle-lg">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <h1>WELCOME <span class="primary-text"></span>TO MY WEBSITE</h1>
-            </div>
-        </div>
-    </div>
-</section>
-<!--FETURES-->
-<section id="features">
-    <div class="container">
-        <div class="row center-xs center-sm center-md- center-lg">
-         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <h2>core features</h2>
-          <p>About</p>
-          <p>Experience</p>
-          <p>Gallery</p>
-          <p>Contact</p>
-          <div class="row">
-              <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-              </div>
-          </div>
-         </div>
-        </div>
-    </div>
-</section>
-<!--INFO SECTION-->
-<section id="info">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-
-            </div>
-        </div>
-    </div>
-</section>
+        <div class="Holder">
+            <div class="element">
+                <input name="get_loation" type="submit" class="button" id="get_loation" value="get my location">
+                <div class="Element">
+                    <div id="map">
+                        <iframe id="googlemap" width="425" height="350" frameborder="0" scroling="no" marginheight="0" 
+                        marginwidth="0" src="https://maps.google.co.uk?output=embed"></iframe>
+                    </div>
+             </div>
+             </div>
+        
+        
+             <script>
+        
+                 var c= function(pos) {
+                     var lat = pos.coords.latitude,
+                     long = pos.coords.longitude,
+                     coords = lat +','+ long;
+        
+                     document.getElementById('google_map').setAttribute('src','https://maps.google.co.uk?q='+coords+'&z=60&output=embed');
+        
+                 }
+              
+        
+        
+              document.getElementById('get_location').onclick= function(){
+                  navigator.geolocation.getCurrentLocation(c);
+                  return false;
+              }
+        
+        
+        
+        
+        
+             </script>
+        
+        
+        <title>Downloading Files</title>
+        <body>
+        <a href="2016.jpg" Downloader="my logo"><img src="2016.jpg" alt="thumbnail"width="120"/></a>
+        <a href="graduate.jpg" Downloader="my logo"><img src="graduate.jpg" alt="thumbnail"width="120"/></a><br>
+        <a href="job.jpg" Downloader="my logo"><img src="job.jpg" alt="thumbnail"width="120"/></a>
+        <a href="IT.jpg" Downloader="my logo"><img src="it.jpg" alt="thumbnail"width="120"/></a>
+        </body>
+        </head>
+        </html>
+        
+           
