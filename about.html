@@ -1,12 +1,341 @@
- <!DOCTYPE html>
- <html>
-     <head>
-         <!--font awesome icon library-->
-         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-         <style>
-             .checked {
-                 color: salmon;
-             }
-         </style>
-     </head>
- </html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>school</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <!--NAVIGATION-->
+            <nav>
+                <img src="computer.jpg" class="img" alt="logo">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="googlemap.html">Googlemap</a></li>   
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        <meta charset="UTF-8">
+        <title>GEO LOCATION</title>
+        <style>
+            body{
+                margin: 0px;
+                background-image: none;
+                background-repeat: no-repeat;
+            }
+            .holder {
+                width: 600px;
+                height: 400px;
+                margin: 11px auto;
+                background-color: #ffff;
+                border: 1px solid #1e1a1a;
+            }
+            .element {
+                margin: 11px;
+                width: 500px;
+                height: auto;
+            }
+            .button {
+                width: 200px;
+                height: 50px;
+                border: 0px solid;
+                background-color: wheat;
+                color: #fff;
+                font-size: 24px;
+            }
+            .button:hover {
+                   background-color: tomato;
+                   color: #fff;
+            }
+            </style>
+    </head>
+    <body>
+        <div class="Holder">
+            <div class="element">
+                <input name="get_loation" type="submit" class="button" id="get_loation" value="get my location">
+                <div class="Element">
+                    <div id="map">
+                        <iframe id="googlemap" width="425" height="350" frameborder="0" scroling="no" marginheight="0" 
+                        marginwidth="0" src="https://maps.google.co.uk?output=embed"></iframe>
+                    </div>
+             </div>
+             </div>
+
+
+             <script>
+
+                 var c= function(pos) {
+                     var lat = pos.coords.latitude,
+                     long = pos.coords.longitude,
+                     coords = lat +','+ long;
+
+                     document.getElementById('google_map').setAttribute('src','https://maps.google.co.uk?q='+coords+'&z=60&output=embed');
+
+                 }
+              
+
+
+              document.getElementById('get_location').onclick= function(){
+                  navigator.geolocation.getCurrentLocation(c);
+                  return false;
+              }
+
+
+
+
+
+             </script>
+
+        <div class="wrapper">
+            <!--NAVIGATION-->
+            <!--END OF NAVIGATION-->
+            <div class="section">
+                <h1>WE ENSURE A BETTER EDUCATION <br> FOR A BETTER WORLD</h1>
+                <P>FFFFCFCFC IJIIII YGYYGYGGG EXEXEED TTTFTFTFT IIIJIJIJFCCFCCFXED
+                    UHUHUHUHUHHUUUUHUHUHUHUHUHUHUHUHUHU JJJJJ IIIII IIIIII IIIII
+                    VVVVUJJ KKKK HHHHV MMMM KLLLL JJJJJJ  KKKKKK KKKKK JJJJJ KKKK
+                    HHHH JJJJJJ JJJJJJ KKKKK KKKKKN    KKKKK KKKKKK GFF IIIIIIIII</P>
+                    <a href="#"><button class="btn-1">GET STARTED</button></a>
+                    <!--FEATURES-->
+                    <div class="features">
+                        <button>Learn Online Classes</button>
+                        <button>Bridge Courses</button>
+                        <button>Huge Library</button>
+                        <button>Practical Exposure</button>
+                        <!--END OF FEATURES-->
+                    </div>
+                    <!--END OF SECTION-->
+            </div>
+            <!--END OF WRAPPER-->
+            <!--SHOWCASE-->
+        <showcase>
+        <h1>POPULAR COURSES WE OFFER</h1>
+        <div class="courses">
+            <div class="HTML">
+                <h3>HTML</h3><br><br><br>
+                <img src="computer.jpg" width="50%" alt="hl">
+                <a href="#"><button class="apply">Apply Here</button></a>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="CSS">
+                <div class="css">
+                    <h3>CSS</h3><br><br><br>
+                    <img src="computer.jpg" width="50%" alt="cs">
+                    <a href="#"><button class="apply">Apply Here</button></a>
+                </div>
+                <br>
+                <br>
+                <br>   
+                <div class="javascript">
+                    <div class="js">
+                        <h3>JAVASCRIPT</h3><br><br><br>
+                        <img src="computer.jpg" width="50%" alt="js">
+                        <a href="#"><button class="apply">Apply Here</button></a>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="Python">
+                        <div class="pt">
+                            <h3>PYTHON</h3><br><br><br>
+                            <img src="computer.jpg" width="50%" alt="cs">
+                            <a href="#"><button class="apply">Apply Here</button></a>
+                        </div>
+                   </div>
+              </showcase>
+              <!--END OF SHOWCASE-->
+              <!DOCTYPE html>
+              <html lang="en">
+                  <head>
+                      <meta charset="UTF-8" />
+                      <meta name="viewport" content="width-device-width,initial-scale=1.0" />
+                      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+                      <title>MY PORTIFOLIO</title>
+                      </head>
+                      <body>
+                          <style>
+                              *{
+                                  margin: 0;
+                                  padding: 0;
+                              }
+                              body{
+                                  font-family: Arial, Helvetica, sans-serif;
+                                  background:royalblue;
+                                  color: white;
+                                  line-height: 1.6;
+                                  height: 100vh;
+                                  /*overflow: hidden:*/
+                              }
+                              .container{
+                                  width: 100%;
+                                  height: 100%;
+                                  /*CSS Smooth Scroll*/
+                                  overflow-y: scroll;
+                                  /*scroll-behavior: smooth:*/
+                                  /*scroll-snap-type:y mandatory*/
+                              }
+                              .navbar{
+                                  position: fixed;
+                                  top: 0;
+                                  z-index: 1;
+                                  display: flex;
+                                  width: 100%;
+                                  height: 60px;
+                                  background: rgba(60, 98, 129, 0.7);
+                              }
+                              .navbar ul{
+                                  display: fex;
+                                  list-style: none;
+                                  width: 100%;
+                                  justify-content: center;
+                              } 
+                              .navbar ul li{
+                                  margin: 0 1rem;
+                                  padding: 1rem;
+                              }
+                              .navbar ul li a{
+                                  text-decoration: none;
+                                  text-transform: uppercase;
+                                  color: #f4f4f4;
+                              }
+                              .navbar ul li a:hover{
+                                  color: blueviolet;
+                              }
+                              section{
+                                   display: flex;
+                                   flex-direction: column;
+                                   align-items: center;
+                                   justify-content: center;
+                                   text-align: center;
+                                   width: 100%;
+                                   height: 100vh;
+                                   scroll-snap-align: center;
+                              }
+                              section h1{ 
+                                  font-size: 4rem;
+                              }
+                              section p{
+                                    font-size: 1.5rem;
+                              }
+                              /*Section Image*/
+                              section#home{
+                                  background: url('https://source.unsplash.com/bZZp1PnHI0E/1600x900') no-repeat center center/cover;
+                              }
+                              section#about{
+                                  background: url('https://source.unsplash.com/VRxo0yY-gyM/1600x900') no-repeat center center/cover;
+                              }
+                              section#experience{
+                                  background: url('https://source.unsplash.com/K2tdx2mFDHc/1600x900') no-repeat center center/cover;
+                              }
+                              section#contact{
+                                  background: url('https://source.unsplash.com/2aAHlfDOhJM/1600x900') no-repeat center center/cover;
+                              }
+                          </style>
+              
+                          <style>
+                          *
+                          {
+                              padding: 0px;
+                              margin: 0px;
+                          }
+                          body
+                          {
+                              margin: 250px;
+                              margin-top: 20px;
+                          }
+                          #container ul {
+                              list-style: none;
+                          }
+                          #container ul li{
+                              background-color:transparent;
+                              width: 100px;
+                              border: 1px solid black;
+                              border-radius: 200px;
+                              height: 30px;
+                              line-height: 30px;
+                              text-align: center;
+                              float: right;
+                              color:black;
+                              position: relative;
+                          }
+                          #container ul li:hover{
+                              background-color: white;
+                          }
+                          #container ul ul{
+                              display: none;
+                          }
+                          #container ul li:hover> ul{
+                              display:block;
+                          }
+                          #container ul ul ul{
+                              margin-right: 150px;
+                              top:0px;
+                              position:absolute;
+                          }
+                      </style>
+                         <section id="contact">
+                                          <h1>contact</h1>
+                                          <p>
+                                              <form action="" method="">
+                                                  <p>Name</p>
+                                                  <input type="Name" placeholder="Name">
+                                                  <input type="Surname">
+                                                  <br>
+                                                  <p>password</p>
+                                                  <input type="Password" placeholder="Password">
+                                                  <input type="password">
+                                                  <br>      
+                                                  <p>Email</p>
+                                                  <input type="Email" placeholder="Email">
+                                                  <input type="Email" name="" id="" value="Email">
+                                                  <br>
+                                                  <br>
+                                                  <p>Description</p>
+                                                  <textarea name="" id="" cols="50" rows="10"></textarea>
+                                                  <br>
+                                                  <p>please select your favorate coding language</p>
+                                                  <input type="radio" name="coding" id="" value="html">HTML
+                                                  <input type="radio" name="coding" id="" value="javascript">Css
+                                                  <input type="radio" name="coding" id="" value="python">javascript
+                                                  <br>
+                                                  <br>
+                                                  <p>pease select your favorate coding language</p>
+                                                  <input type="checkbox" value="html" name="programming" id="">Html
+                                                  <input type="checkbox" value="css" name="programming" id="">Css
+                                                  <input type="checkbox" value="javascript" name="programming" id="">javascript
+                                                  <br>
+                                                  <p>please select your favorate coding language</p>
+                                                  <select name="languages" id="">
+                                                      <option value="html">html</option>
+                                                      <option value="css">css</option>
+                                                      <option value="javascript">javascript</option>
+                                                  </select>
+                                                  <br>
+                                                  <br>
+                                                  <input type="Submit" value="Submit please">
+                                                  <!--<button type="submit">submit</button-->
+                                              </form>
+                                              </body><br>
+                                              <br>
+                                              <a href="#top">back to the top</a>
+                                      </body> 
+                                  </section>
+                                  </html>
+                                          </p>
+              
+                                      </section>
+                              </div>
+                              <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+                              <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll014.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+                              <script src="main.js"> </script>
+                          </div>
+                      </body>
+    </body>
+</html>
